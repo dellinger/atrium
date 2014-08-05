@@ -8,5 +8,6 @@
   },
   "license": "MIT",
   "dependencies": {
+    "mongoose": "^3.8.14"
   }
 }
