@@ -7,8 +7,12 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var items = require('./routes/items');
 
 var app = express();
+
+// Adding items.list route
+app.get('/', items.list);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

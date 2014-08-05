@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+      <title><%= title %></title>
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+
+    <body>
+    	<h1>Items</h1>
+    	<p> Home Inventory Application </p>
+    	<div id="items">
+    		<% items.forEach(function(item) {  %>
+    			<div class="item">
+    			   <h2><%=item.name%></h2>
+    			   <p><%=item.description%></p>
+    			   <img src='<%=item.path%>' />
+    			</div>
+    		<% }) %>
+		</div>
+	</body>
+</html>
+    			
