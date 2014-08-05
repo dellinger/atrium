@@ -8,10 +8,5 @@
   },
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.5.2",
-    "express": "^4.7.2",
-    "method-override": "^2.1.2",
-    "mongoose": "^3.8.14",
-    "morgan": "^1.2.2"
   }
 }
