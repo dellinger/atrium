@@ -17,3 +17,9 @@ exports.list = function(req, res) {
 		items: items
 	});
 }
+
+exports.form = function(req, res) {
+	res.render('items/add',{
+		title: 'Add an Item'
+	});
+}
