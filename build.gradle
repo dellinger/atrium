@@ -1,1 +1,16 @@
 apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
+
+dependencies {
+    compile("org.springframework:spring-context:4.1.0.RELEASE")
+    compile("'joda-time:joda-time:2.4")
+    testCompile("org.springframework:spring-test:4.1.0.RELEASE")
+}
